@@ -1,0 +1,11 @@
+.search-container{
+    float: right;
+    padding: 9px 1px;
+    margin-top: 8px;
+    margin-right: 580px;
+    margin-bottom: -900px;
+    font-size:17px;
+    border-radius: 20px;  
+    cursor:wait;
+
+}

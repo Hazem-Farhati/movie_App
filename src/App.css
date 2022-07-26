@@ -5,3 +5,8 @@
 body{
   background-color: rgb(33, 44, 44);
 }
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}

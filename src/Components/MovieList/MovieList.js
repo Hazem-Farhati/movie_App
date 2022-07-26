@@ -1,14 +1,18 @@
 import React from 'react'
 import './MovieList.css'
 import PropTypes  from 'prop-types';
+import Rating from '../Rating/Rating';
+
 const MovieList = (props) => {
   return (
    
     <div className='poster' >
+      
 <img className='MoviCard-poster'
  src={props.poster}
  alt="a" />
 <div className='poster-one' >
+  
   <h3>{props.title}</h3> 
   <br />
   <p style={{fontSize:"10px",maxWidth:"50px"}}>{props.posterUrl}</p>
@@ -24,15 +28,15 @@ const MovieList = (props) => {
 MovieList.defaultProps = {
   title: "add ur title ",
   poster:"images/test.png",
-  posterUrl:"add ur posterUrl",
+  // posterUrl:"add ur posterUrl",
   description : "add ur description",
-  rating:"add ur rating",
+  rating: <Rating/>
 
 };
 
 MovieList.propTypes = {
   title : PropTypes.string,
-  posterUrl : PropTypes.string,
+  // posterUrl : PropTypes.string,
   description : PropTypes.string,
 
 };

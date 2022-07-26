@@ -1,0 +1,16 @@
+
+.rating a {
+    float: right;
+    color: #aaa;
+    text-decoration: none;
+    font-size: 1.9em;
+    transition: color .4s;
+    margin-right: 35px;
+  }
+  .rating a:hover,
+  .rating a:focus,
+  .rating a:hover ~ a,
+  .rating a:focus ~ a {
+    color: orange;
+    cursor: pointer;
+  }
