@@ -23,6 +23,7 @@ const MovieCard = () => {
         poster={el.poster}
         title={el.title}
         description={el.description}
+        note={el.note}
         // posterUrl={el.posterUrl}
         rating={<Rating/>}
         />

@@ -17,9 +17,16 @@ const MovieList = (props) => {
   <br />
   <p style={{fontSize:"10px",maxWidth:"50px"}}>{props.posterUrl}</p>
   <br />
-  <p>{props.description}</p>
-  <br />
-  <h3>{props.rating}</h3>
+  <div></div>
+  <div className="DivForHoverItem">
+  <div className="HiddenText">{props.description}</div>
+</div>
+<br />
+<br />
+<div className='note_rating'>
+  <i className='note'>{props.note}</i>
+  <h3 className='rating'>{props.rating}</h3>
+  </div>
 </div>
     </div>
    
