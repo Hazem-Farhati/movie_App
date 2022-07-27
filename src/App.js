@@ -1,10 +1,11 @@
 import './App.css';
-import MovieCard from './Components/MovieCard/MovieCard';
+import Filter from './Components/Filtre/Filter';
+// import MovieCard from './Components/MovieCard/MovieCard';
 
 function App() {
   return (
     <div>
-     <MovieCard/>
+     <Filter/>
  
      </div>
   );

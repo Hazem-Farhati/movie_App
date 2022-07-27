@@ -14,9 +14,10 @@
 }
 
 .poster{
+    
     margin: 40px ;
     margin-left: 120px;
-    width: 350px;
+    width: 550px;
     background-color: rgb(33, 44, 44);
     border-radius: 10px;
     border: 2px solid rgb(87, 81, 81);

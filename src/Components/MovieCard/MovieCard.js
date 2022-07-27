@@ -16,27 +16,7 @@ const MovieCard = () => {
     <div className='title_movie'>Movies </div>
     <br /> <br />
     <Filter />
-    <div className='MovieCard'>
-    {      
-      moviesList.map((el)=>(
-        <MovieList
-        poster={el.poster}
-        title={el.title}
-        description={el.description}
-        note={el.note}
-        // posterUrl={el.posterUrl}
-        rating={<Rating/>}
-        />
-      ))   
-    }
-         
-        <Additem
 
-        rating={<Rating/>}
-        />
-       
-    
-   </div>
     </>
   )
 }

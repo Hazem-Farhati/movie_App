@@ -5,31 +5,31 @@ import Rating from '../Rating/Rating';
 
 const MovieList = (props) => {
   return (
-   
-    <div className='poster' >
-      
-<img className='MoviCard-poster'
- src={props.poster}
- alt="a" />
-<div className='poster-one' >
-  
-  <h3>{props.title}</h3> 
-  <br />
-  <p style={{fontSize:"10px",maxWidth:"50px"}}>{props.posterUrl}</p>
-  <br />
-  <div></div>
-  <div className="DivForHoverItem">
-  <div className="HiddenText">{props.description}</div>
-</div>
-<br />
-<br />
-<div className='note_rating'>
-  <i className='note'>{props.note}</i>
-  <h3 className='rating'>{props.rating}</h3>
-  </div>
-</div>
+
+    <div  >
+
+      <img className='MoviCard-poster'
+        src={props.poster}
+        alt="a" />
+      <div className='poster-one' >
+
+        <h3>{props.title}</h3>
+        <br />
+        <p style={{ fontSize: "10px", maxWidth: "50px" }}>{props.posterUrl}</p>
+        <br />
+        <div></div>
+        <div className="DivForHoverItem">
+          <div className="HiddenText">{props.description}</div>
+        </div>
+        <br />
+        <br />
+        <div className='note_rating'>
+          <i className='note'>{props.note}</i>
+          <h3 className='rating'>{props.rating}</h3>
+        </div>
+      </div>
     </div>
-   
+
   )
 }
 MovieList.defaultProps = {
