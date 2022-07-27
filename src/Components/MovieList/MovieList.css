@@ -1,12 +1,9 @@
 
 .MovieCard {
     background-color: rgba(45, 55, 55, 0.884);
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-    margin-top: 78px ;
+    margin-top: 158px ;
     margin-left: 140px;
-    width: 80%;
+    width: 70%;
     border: 1px solid white;
 
     
@@ -17,7 +14,8 @@
     
     margin: 40px ;
     margin-left: 120px;
-    width: 550px;
+    width: 300px;
+    height: 523px;
     background-color: rgb(33, 44, 44);
     border-radius: 10px;
     border: 2px solid rgb(87, 81, 81);
@@ -30,14 +28,18 @@
 
 
 .MoviCard-poster{
-    width: 350px;
+    width: 300px;
     height: 290px;
     border-radius: 10px;
     border: 1px solid rgb(87, 81, 81);
 
 }
 .poster-one{
-    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+   
+
 }
 .note{
     color: yellowgreen;
@@ -46,7 +48,7 @@
 .DivForHoverItem {
     /*just so we can see it*/
     height: 50px;
-    width: 350px;
+    width: 300px;
     background-color: rgb(33, 44, 44);
 }
 
@@ -69,4 +71,4 @@
 }
 .rating{
     padding: 0%;
-}
+;}

@@ -5,6 +5,7 @@ import Filter from './Components/Filtre/Filter';
 function App() {
   return (
     <div>
+    <div className='title_movie'>Movies </div>
      <Filter/>
  
      </div>

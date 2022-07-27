@@ -2,34 +2,32 @@ import React from 'react'
 import './MovieList.css'
 import PropTypes  from 'prop-types';
 import Rating from '../Rating/Rating';
+import "../MovieCard/MovieCard.css"
 
 const MovieList = (props) => {
   return (
-
-    <div  >
-
+<>
+    <div>
+  <div className='poster'>
       <img className='MoviCard-poster'
         src={props.poster}
         alt="a" />
-      <div className='poster-one' >
-
+       <div  > 
         <h3>{props.title}</h3>
         <br />
         <p style={{ fontSize: "10px", maxWidth: "50px" }}>{props.posterUrl}</p>
         <br />
-        <div></div>
         <div className="DivForHoverItem">
           <div className="HiddenText">{props.description}</div>
         </div>
         <br />
         <br />
-        <div className='note_rating'>
+        <h3 className='rating'>{props.rating}</h3>
           <i className='note'>{props.note}</i>
-          <h3 className='rating'>{props.rating}</h3>
-        </div>
-      </div>
+      </div> 
     </div>
-
+    </div>
+    </>
   )
 }
 MovieList.defaultProps = {
