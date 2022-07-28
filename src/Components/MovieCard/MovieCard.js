@@ -1,15 +1,15 @@
 import React from 'react'
 
-import  './MovieCard.css' 
-    /* movie list  */
+import './MovieCard.css'
+/* movie list  */
 
 const MovieCard = () => {
 
-// 
+  // 
   return (
     <>
-    <div className='title_movie'>Movies </div>
-    <br /> <br />
+      <div className='title_movie'>Movies </div>
+      <br /> <br />
 
     </>
   )

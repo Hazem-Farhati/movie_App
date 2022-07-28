@@ -1,61 +1,69 @@
+.add-btn{
+  border: none;
+  color: black; 
+  background-color: rgb(172, 161, 161); 
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 159px;
+  margin-left: 600px;
+  position: absolute;
 
-.form-field {
-    flex: 2;
+}
+.add-btn:hover {
+    background-color: #2e2d31; /* Green */
+    color: white;
+
+    border: 2px solid #fbfbfb;
   }
-  .output {
-    margin-left: 3rem;
-    flex: 1;
-  }
-  .form-field label,
-  h2 {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 500;
-    color: rgb(84, 84, 84);
-  }
-  
-  input {
-    height: 35px;
-    width: 100%;
-    padding: 7px;
-    outline: none;
+
+  .inpt{
+    width: 250px;
+    height: 30px;
+    margin-bottom: 20px;
     border-radius: 5px;
-    border: 1px solid rgb(220, 220, 220);
+    text-align: center;
+    color: black;
+  }
+  .all-inpt{
+    margin-left: 430px;
+    margin-top: 210px;
+    position: absolute;
+    background-color: rgb(33, 44, 44);
+    padding: 10%;
+    gap: 500px;
+    border: 1px white solid;
+z-index: 99999999;
   }
   
-  input:focus {
-    border: 1px solid rgb(0, 208, 255);
+  .save-btn{
+    background-color: #f44336;
+  color: black; 
+  border: 2px solid #f44336;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  position: absolute;
+  margin-top: 510px;
+  margin-left: 640px;
+  border-radius: 10px;
+  z-index: 99999999999999999999999;
   }
-  
-  .services {
-    display: flex;
-    justify-content: space-between;
+
+  .save-btn:hover {
+    background-color:white;
+    color: rgb(0, 0, 0);
   }
-  .first-division {
-    display: flex;
-    flex-direction: column;
-    margin: 0 5px 0.5rem 0;
-    width: 100%;
-  }
-  button {
-    background: none;
-    outline: none;
-    cursor: pointer;
-    font-weight: 500;
-    border-radius: 2px;
-    padding: 5px 10px;
-  }
-  .first-division button {
-    align-self: flex-start;
-    display: flex;
-    align-items: center;
-    margin-top: 0.5rem;
-    color: rgb(0, 208, 255);
-    border: 1px solid rgb(0, 208, 255);
-  }
-  
-  .second-division button {
-    color: red;
-    border: 1px solid red;
-  }
-  
+
+
