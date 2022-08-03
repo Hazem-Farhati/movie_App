@@ -6,11 +6,13 @@ import MovieList from '../MovieList/MovieList'
 import '../MovieList/MovieList.css'
 import '../MovieCard/MovieCard.css'
 import Additem from '../Additem/Additem';
+import { Link } from 'react-router-dom';
 // import '../../Components/MovieList/MovieList.css'
 const Filter = ({ movies,setMovies }) => {
         const [search, setSearch] = useState('');
         return (
                 <>
+
         <input
          className='search-container'
          type="text"
@@ -32,7 +34,9 @@ const Filter = ({ movies,setMovies }) => {
                 }).map((el, i) => {
                 return (
             <div key={i}>
-               <MovieList poster={el.poster} title={el.title} description={el.description} note={el.note} rating={el.rating} />
+                    <Link to={`/trailerDetails/${el.id}`}>
+                <MovieList id={el.id} poster={el.poster} title={el.title} description={el.description} note={el.note} rating={el.rating} video={el.video} />
+                        </Link>
                         </div>
             );
                   })}

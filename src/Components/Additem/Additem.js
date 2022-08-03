@@ -6,7 +6,8 @@ const Additem = ({movies,setMovies}) => {
   const [newmovie, setNewmovie] = useState({
     title:"",
     description:"",
-    poster:""
+    poster:"",
+    video:""
 
   });
   const handleSave = ()=>{setMovies([newmovie,...movies])}

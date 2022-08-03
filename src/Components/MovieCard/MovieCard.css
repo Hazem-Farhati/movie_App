@@ -1,7 +1,12 @@
 .title_movie{
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: -50px;
-    font-size: 50px;
-    color: azure;
+    margin-top: 60px;
+    margin-left: 150px;
+    font-size: 40px;
+    color: rgb(219, 221, 221);
+    z-index: 999999999999;
+    position: absolute;
+    background: rgba(0,0,0,0.2);
+    transform: translate(-50%, -50%);
+    border: 6px solid rgb(145, 136, 136);
+  background-color: rgba(0,0,0,0.2);
 }

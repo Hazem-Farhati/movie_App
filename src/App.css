@@ -1,9 +1,14 @@
 *{
   padding: 0%;
   margin: 0%;
+  text-decoration: none;
 }
 body{
   background-color: rgb(33, 44, 44);
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .App {

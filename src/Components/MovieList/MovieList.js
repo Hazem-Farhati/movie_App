@@ -4,12 +4,13 @@ import PropTypes from 'prop-types';
 import Rating from '../Rating/Rating';
 import "../MovieCard/MovieCard.css"
 import Additem, { AddMovie } from '../Additem/Additem';
+import { Link } from 'react-router-dom'
 
 const MovieList = (props) => {
   return (
     <>
 
-      <div>
+      <div >
         <div className='poster'>
           <img className='MoviCard-poster'
             src={props.poster}
@@ -24,11 +25,11 @@ const MovieList = (props) => {
             </div>
             <br />
             <br />
-            <h3 className='rating'>{props.rating}</h3>
             <i className='note'>{props.note}</i>
 
           </div>
         </div>
+        <h3 className='rating'>{props.rating}</h3>
 
       </div>
 
