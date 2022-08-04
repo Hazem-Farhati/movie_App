@@ -10,7 +10,7 @@ const Additem = ({movies,setMovies}) => {
     video:""
 
   });
-  const handleSave = ()=>{setMovies([newmovie,...movies])}
+  const handleSave = ()=>{setMovies([newmovie,...movies]);setShow(false)}
   return (
     < >
   <button  className='add-btn' onClick={()=>setShow(true)}>
@@ -27,7 +27,7 @@ const Additem = ({movies,setMovies}) => {
       </div>  :null
       }
       { show?
-      <button className='save-btn'  onClick={handleSave} >
+      <button className='save-btn'  onClick={handleSave}  >
             Save
           </button> 
           

@@ -1,12 +1,23 @@
-.title_movie{
-    margin-top: 60px;
-    margin-left: 150px;
-    font-size: 40px;
-    color: rgb(219, 221, 221);
-    z-index: 999999999999;
-    position: absolute;
-    background: rgba(0,0,0,0.2);
-    transform: translate(-50%, -50%);
-    border: 6px solid rgb(145, 136, 136);
-  background-color: rgba(0,0,0,0.2);
+.nav-bar{
+  z-index: 999999999999;
+  background-color: rgb(0,0,0,0.9);
+  width: 200%;
+  height: 125px;
+  margin-bottom: -130px;
+  z-index: 999999999999;
+  position: relative;
+  transform: translate(-50%, -50%);
+  
+}
+
+.nav-bar a h2{
+  font-size: 35px;
+  margin-left: 1700px;
+  margin-top: 93px;
+  color: rgb(219, 221, 221);
+  z-index: 99999999999999999999999999;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  /* background-color: brown; */
+  
 }

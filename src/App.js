@@ -61,13 +61,17 @@ const [movies, setMovies] = useState([{
   note : "7,8",
 
 },
-
 ])
   return (
     <div>
-      <Link to='/'>
-        <div className='title_movie'>Movies </div>
-      </Link>
+      
+      
+                <div className='nav-bar'>
+                <Link to='/'>
+                        <h2>Pansho4Movie</h2>    
+               </Link>
+                </div> 
+                
     <Routes>
     {/* <Route path='/trailerDetails' element={<TrailerDetails/>}/> */}
     <Route  path='/' element={<Filter movies={movies} setMovies={setMovies}/>}/>

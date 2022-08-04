@@ -11,6 +11,7 @@ const MovieList = (props) => {
     <>
 
       <div >
+        
         <div className='poster'>
           <img className='MoviCard-poster'
             src={props.poster}
@@ -29,9 +30,9 @@ const MovieList = (props) => {
 
           </div>
         </div>
-        <h3 className='rating'>{props.rating}</h3>
 
       </div>
+      <h3 className='rating'>{props.rating}</h3>
 
     </>
   )

@@ -12,9 +12,12 @@ const TrailerDetails = ({ movies, setMovies }) => {
     <div >
       {movies.filter((el) => parseInt(id) === el.id).map((movie, i) =>
         <div >
-          {show? 
+          {show?
+          <h2 key={i} className='full-title'  >{movie.title}</h2>:!show
+          },
+          {show&&
           <h2 key={i} className='full-one'  >{movie.description}</h2>
-          :null}
+          }
           <button className='btn1'  onMouseEnter={()=>setShow(true)} onMouseOut={()=>setShow(false)} ></button>
           <div class="video-container" >
           <iframe 
@@ -23,7 +26,7 @@ const TrailerDetails = ({ movies, setMovies }) => {
           </div>
         </div>)
       }
-      {/* <button onClick={() => { navigate("/"); }}>BACK TO HOME PAGE</button> */}
+      {/* <button className='btn-back' onClick={() => { navigate("/"); }}>BACK TO HOME PAGE</button> */}
     </div>
   )
 }

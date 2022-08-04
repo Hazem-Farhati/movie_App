@@ -12,7 +12,8 @@ const Filter = ({ movies,setMovies }) => {
         const [search, setSearch] = useState('');
         return (
                 <>
-
+                
+                     
         <input
          className='search-container'
          type="text"
@@ -35,7 +36,7 @@ const Filter = ({ movies,setMovies }) => {
                 return (
             <div key={i}>
                     <Link to={`/trailerDetails/${el.id}`}>
-                <MovieList id={el.id} poster={el.poster} title={el.title} description={el.description} note={el.note} rating={el.rating} video={el.video} />
+                <MovieList id={el.id} poster={el.poster} title={el.title} description={el.description} note={el.note}  video={el.video} />
                         </Link>
                         </div>
             );
